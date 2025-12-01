@@ -13,7 +13,7 @@ export const About: React.FC = () => {
             We are Grain, a creative filmmaking duo specializing in cinematic mini films for outdoor and adventure brands. We combine film-grade visuals, clear, authentic, impactful storytelling, and strategic thinking to create content that connects with the viewers on an emotional level that converts.
 As a two-person team, we’re faster, focused, and fully hands-on, delivering the detail, consistency, and creative cohesion larger teams often can’t.
 
-High impact mini films that sell. 
+High impact brand films that sell. 
           </p>
         </div>
 
