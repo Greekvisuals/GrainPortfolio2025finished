@@ -16,7 +16,7 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects, onProjectCli
             key={project.id}
             id={`project-${project.id}`}
             onClick={() => onProjectClick(project)}
-            className="group relative w-full h-[80vh] md:h-screen flex items-center justify-center overflow-hidden border-b border-white/5 cursor-pointer"
+            className="group relative w-full h-[30vh] md:h-screen flex items-center justify-center overflow-hidden border-b border-white/5 cursor-pointer"
           >
             {/* Background Video - Above Grain (z-50) */}
             <div className="absolute inset-0 z-40 bg-[#050505]">
@@ -35,7 +35,7 @@ export const ProjectList: React.FC<ProjectListProps> = ({ projects, onProjectCli
 
             {/* Content - Above Video (z-50) */}
             <div className="relative z-50 text-center px-6 mix-blend-screen pointer-events-none">
-              <h2 className="text-5xl md:text-8xl font-display font-medium uppercase text-white tracking-tight mb-3 md:mb-6 drop-shadow-2xl scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out">
+              <h2 className="text-3xl md:text-8xl font-display font-medium uppercase text-white tracking-tight mb-3 md:mb-6 drop-shadow-2xl scale-100 group-hover:scale-105 transition-transform duration-1000 ease-out">
                 {project.title}
               </h2>
               <div className="flex items-center justify-center gap-3 text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-white/90 drop-shadow-lg">
