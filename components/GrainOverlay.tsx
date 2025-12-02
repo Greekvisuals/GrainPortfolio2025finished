@@ -33,7 +33,7 @@ export const GrainOverlay: React.FC = () => {
              if (random < 0.4) { 
                 // White pixel with varying alpha for depth
                 // Alpha between 20 and 60 (out of 255) for visibility
-                const alpha = Math.floor(Math.random() * 30) + 10;
+                const alpha = Math.floor(Math.random() * 20) + 10;
                 
                 // Little Endian: AABBGGRR -> 0xAAFFFFFF (White with Alpha)
                 buffer[i] = (alpha << 24) | 0x00FFFFFF;
