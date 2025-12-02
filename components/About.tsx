@@ -10,7 +10,7 @@ export const About: React.FC = () => {
             We’re a videography studio driven by a love for cinematic storytelling and intentional filmmaking.
           </h2>
           <p className="text-white/60 leading-relaxed max-w-md">
-            We are Grain, a creative filmmaking duo specializing in cinematic mini films for outdoor and adventure brands. We combine film-grade visuals, clear, authentic, impactful storytelling, and strategic thinking to create content that connects with the viewers on an emotional level that converts.
+            We are Grain, a creative filmmaking duo specializing in cinematic brand films for outdoor, adventure and sports brands. We combine film-grade visuals, clear, authentic, impactful storytelling, and strategic thinking to create content that connects with the viewers on an emotional level that converts.
 As a two-person team, we’re faster, focused, and fully hands-on, delivering the detail, consistency, and creative cohesion larger teams often can’t.
 
 High impact brand films that sell. 
