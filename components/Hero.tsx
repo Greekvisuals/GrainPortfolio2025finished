@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
       {/* Background Video - Above Grain (z-40) */}
       <div className="absolute inset-0 z-40">
         <video 
-          src="https://firebasestorage.googleapis.com/v0/b/redhead-productions.firebasestorage.app/o/GRAIN%20SHOWREEL%20Prores%20optimized.mp4?alt=media&token=de5c1c97-05a3-46ff-8fc2-cea2a823161e" 
+          src="https://firebasestorage.googleapis.com/v0/b/redhead-productions.firebasestorage.app/o/grainshowreel%20best.mp4?alt=media&token=4a0d1186-a270-4616-aa86-7830bfb6abe3" 
           autoPlay 
           loop 
           muted 
