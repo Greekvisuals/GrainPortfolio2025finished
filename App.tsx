@@ -25,15 +25,19 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const fetchedProjects = await getProjectsFromFirestore();
-        if (fetchedProjects.length > 0) {
-          // Merge fetched projects with initial structure if needed, or just use them
-          // Note: Firestore projects won't have the rich mock data (credits/headlines) unless added manually
-          // For this demo, we prioritize the Initial Projects if they match IDs to keep the rich UI
+        // Add a timeout to prevent hanging if Firebase is unreachable
+        const fetchPromise = getProjectsFromFirestore();
+        const timeoutPromise = new Promise<Project[]>((_, reject) => 
+          setTimeout(() => reject(new Error("Firebase fetch timeout")), 5000)
+        );
+        
+        const fetchedProjects = await Promise.race([fetchPromise, timeoutPromise]);
+        
+        if (fetchedProjects && fetchedProjects.length > 0) {
           setProjects(fetchedProjects);
         }
       } catch (error) {
-        console.error("Failed to fetch projects", error);
+        console.error("Failed to fetch projects, using fallback:", error);
       } finally {
         setLoading(false);
       }
@@ -91,6 +95,7 @@ const App: React.FC = () => {
       
       <main>
         <Hero />
+        <ClientSlider />
         {loading ? (
           <div className="h-screen w-full flex items-center justify-center bg-[#0a0a0a]">
              <span className="text-white/40 uppercase tracking-widest animate-pulse text-xs">Loading Projects...</span>
