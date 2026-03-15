@@ -62,12 +62,18 @@
       }
       /* Film Halation Effect for Images */
       .logo-halation {
+        display: inline-flex;
         /* Using drop-shadow to wrap the glow around the alpha channel of the images */
         filter: 
           drop-shadow(0 0 12px rgba(230,120,40,0.8))
           drop-shadow(0 0 32px rgba(210,70,20,0.4))
           drop-shadow(0 0 80px rgba(180,40,10,0.3));
         transition: filter 0.4s ease;
+        /* Fix for WebKit clipping drop-shadows on hardware-accelerated layers */
+        padding: 100px;
+        margin: -100px;
+        transform: translate3d(0,0,0);
+        will-change: filter;
       }
       .logo-halation:hover {
         filter: 
