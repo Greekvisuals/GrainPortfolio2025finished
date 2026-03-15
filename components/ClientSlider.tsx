@@ -17,12 +17,14 @@ export const ClientSlider: React.FC = () => {
       <div className="w-full relative z-10">
         <div className="flex w-max animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
           {duplicatedLogos.map((logo, index) => (
-            <div key={index} className="flex-shrink-0 mx-8 md:mx-16 flex items-center justify-center logo-halation">
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="h-8 md:h-12 w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
-              />
+            <div key={index} className="flex-shrink-0 mx-8 md:mx-16 flex items-center justify-center">
+              <div className="logo-halation">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-8 md:h-12 w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
             </div>
           ))}
         </div>
