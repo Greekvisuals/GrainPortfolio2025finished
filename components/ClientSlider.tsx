@@ -14,14 +14,14 @@ export const ClientSlider: React.FC = () => {
 
   return (
     <section className="w-full py-16 md:py-24 overflow-hidden relative flex items-center bg-[#0a0a0a]">
-      <div className="w-full">
+      <div className="w-full relative z-10">
         <div className="flex w-max animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
           {duplicatedLogos.map((logo, index) => (
-            <div key={index} className="flex-shrink-0 mx-8 md:mx-16 flex items-center justify-center">
+            <div key={index} className="flex-shrink-0 mx-8 md:mx-16 flex items-center justify-center logo-halation">
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-8 md:h-12 w-auto brightness-0 invert opacity-40 hover:opacity-100 transition-opacity duration-300"
+                className="h-8 md:h-12 w-auto brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
@@ -30,7 +30,7 @@ export const ClientSlider: React.FC = () => {
 
       {/* Progressive Blur Left */}
       <div 
-        className="pointer-events-none absolute top-0 left-0 h-full w-[160px] md:w-[250px] backdrop-blur-[12px] bg-gradient-to-r from-[#0a0a0a] to-transparent"
+        className="pointer-events-none absolute top-0 left-0 h-full w-[160px] md:w-[250px] backdrop-blur-[12px] bg-gradient-to-r from-[#0a0a0a] to-transparent z-20"
         style={{
           maskImage: 'linear-gradient(to right, black 20%, transparent)',
           WebkitMaskImage: 'linear-gradient(to right, black 20%, transparent)'
@@ -39,7 +39,7 @@ export const ClientSlider: React.FC = () => {
       
       {/* Progressive Blur Right */}
       <div 
-        className="pointer-events-none absolute top-0 right-0 h-full w-[160px] md:w-[250px] backdrop-blur-[12px] bg-gradient-to-l from-[#0a0a0a] to-transparent"
+        className="pointer-events-none absolute top-0 right-0 h-full w-[160px] md:w-[250px] backdrop-blur-[12px] bg-gradient-to-l from-[#0a0a0a] to-transparent z-20"
         style={{
           maskImage: 'linear-gradient(to left, black 20%, transparent)',
           WebkitMaskImage: 'linear-gradient(to left, black 20%, transparent)'
