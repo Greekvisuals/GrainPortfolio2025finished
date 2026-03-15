@@ -5,7 +5,7 @@ export const ClientSlider: React.FC = () => {
     { src: "https://hydratecocowater.com/wp-content/uploads/2026/02/Hydrate_logomarquee_white-scaled.png", alt: "Apple Music" },
     { src: "https://www.bmw.es/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg", alt: "BMW" },
     { src: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/FINAL-LOGO-2_preview_rev_2.png?alt=media&token=dbb42ad5-014a-453e-9c9c-12ae6d9d13c7", alt: "BMW" },    
-    { src: "https://trailberg.eu/cdn/shop/files/trailberg-white.png?v=1739266888&width=198", alt: "Nintendo" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Trailberg%20(1).svg?alt=media&token=81ce0a32-21e0-4b5c-b72a-e662ecb88bb9", alt: "Nintendo" },
     { src: "https://d3k81ch9hvuctc.cloudfront.net/company/VHjAwH/images/2644d8ed-8a7f-4c31-bb10-609a14ca44dc.png", alt: "Prada" },
   ];
 
