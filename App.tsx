@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { NavBar } from './components/NavBar';
 import { Hero } from './components/Hero';
@@ -12,6 +11,7 @@ import { Footer } from './components/Footer';
 import { UploadModal } from './components/UploadModal';
 import { GrainOverlay } from './components/GrainOverlay';
 import { ProjectDetail } from './components/ProjectDetail';
+import { ClientSlider } from './components/ClientSlider';
 import { INITIAL_PROJECTS } from './constants';
 import { Project } from './types';
 import { getProjectsFromFirestore } from './services/firebaseService';
