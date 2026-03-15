@@ -186,9 +186,10 @@ export const MOCK_REVIEWS: Review[] = [
 
 export const SERVICES = [
   "Brand Films",
-  "Commercials & Ad Spots",
   "Event Cinematography",
-  "Fashion Films",
+  "Athlete Documentary",
+  "Fashion Films",    
+  "Commercials & Ad Spots",
   "Wedding Films",
   "Documentary Shorts",
   "Creative Direction"
