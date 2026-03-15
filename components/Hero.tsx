@@ -35,4 +35,3 @@ export const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
