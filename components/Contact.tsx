@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
     <section id="contact-section" className="py-24 bg-[#0a0a0a] px-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
-          <h2 className="text-4xl md:text-6xl font-display uppercase text-white mb-6">Let's Connect</h2>
+          <h2 className="text-4xl md:text-6xl font-display uppercase text-white mb-6">Planning a campaign?</h2>
           <p className="text-white/60 text-lg leading-relaxed max-w-md mb-8">
             Got a vision for a project? We'd love to help you bring it to life. 
             Fill out the form or send us an email directly.
