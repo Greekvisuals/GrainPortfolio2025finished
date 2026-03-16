@@ -12,8 +12,6 @@ export const About: React.FC = () => {
             At Grain, we build identity-defining films and visual assets for outdoor and performance brands into cult identities people instantly remember.
           </h2>
           <p className="text-white/60 leading-relaxed max-w-md">
-            We develop identity-defining films and strategic visual assets designed to build recognition, authority, and long-term brand equity. Our work combines cinematic storytelling with clear brand thinking to create films that people remember and brands can build around.
-
 Rather than producing disposable content, we focus on creating visual foundations that shape how a brand is perceived across campaigns, platforms, and audiences.
 
 Every project is approached with a director’s eye and a strategist’s mindset. From concept to final film, we stay fully involved to ensure creative consistency, strong narrative, and a visual identity that stands apart in crowded markets.
