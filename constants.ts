@@ -222,7 +222,7 @@ export const TEAM_MEMBERS = [
   {
     name: "John Antonsen",
     role: "Director / DOP / Head of Post",
-    image: "https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=1000&auto=format&fit=crop"
+    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/John%20med%20Gimbal%20Headshots.jpg?alt=media&token=5f097cfb-fc41-4750-8139-2ca421bd7457"
   },
   {
     name: "Elise Bjørnøs",
