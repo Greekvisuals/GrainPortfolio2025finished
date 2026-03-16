@@ -62,7 +62,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-40">
         <video 
           ref={videoRef}
-          src="https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/GRAINSHOWEEELTOPAZFAST1080p%20copy.mp4?alt=media&token=0a977e9f-624b-40c9-a449-1eb8499532f3" 
+          src="https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Showreel%20nyeste%20HB%20Creator.mp4?alt=media&token=6961f766-c51b-4fd4-bf05-1fbebc6ce421" 
           autoPlay 
           loop 
           muted 
