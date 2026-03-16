@@ -194,3 +194,44 @@ export const SERVICES = [
   "Documentary Shorts",
   "Creative Direction"
 ];
+
+export const PROCESS_STEPS = [
+  {
+    number: "01",
+    title: "Discovery & Strategy",
+    description: "We begin by understanding your brand’s core voice. We strip away the noise to find the narrative thread that will resonate most deeply with your audience."
+  },
+  {
+    number: "02",
+    title: "Pre-Production",
+    description: "Meticulous planning. We scout locations, cast talent, and storyboard every frame to ensure the vision is airtight before the camera rolls."
+  },
+  {
+    number: "03",
+    title: "Production",
+    description: "The execution. We utilize high-end cinema equipment and lighting to capture your story with an aesthetic that feels expensive, organic, and intentional."
+  },
+  {
+    number: "04",
+    title: "Post-Production",
+    description: "Where the magic solidifies. Editing, color grading, and sound design come together to sculpt the final emotional arc of the film."
+  }
+];
+
+export const TEAM_MEMBERS = [
+  {
+    name: "John Antonsen",
+    role: "Director / DOP / Head of Post",
+    image: "https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    name: "Elise Bjørnøs",
+    role: "Creative Producer",
+    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Elise%20Headshot%20Best.jpg?alt=media&token=8b0e7edd-d98f-48b0-a8a0-ef5cf7ad80c8"
+  },
+  {
+    name: "Carlos Sanches",
+    role: "Head of Communication",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
+  }
+];
