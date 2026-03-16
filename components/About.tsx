@@ -45,10 +45,10 @@ Every project is approached with a director’s eye and a strategist’s mindset
              <span className="text-xs text-white/40 uppercase tracking-widest hidden md:block">Hands-on Production</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
              {TEAM_MEMBERS.map((member, index) => (
                <div key={index} className="group cursor-pointer">
-                 <div className="relative w-full aspect-[3/4] overflow-hidden bg-[#111] mb-6 grayscale hover:grayscale-0 transition-all duration-700 ease-out">
+                 <div className="relative w-full aspect-[3/4] overflow-hidden bg-[#111] mb-4 md:mb-6 grayscale hover:grayscale-0 transition-all duration-700 ease-out">
                     <img 
                       src={member.image} 
                       alt={member.name}
@@ -57,10 +57,10 @@ Every project is approached with a director’s eye and a strategist’s mindset
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                  </div>
                  <div className="flex flex-col">
-                    <h3 className="text-2xl font-display uppercase text-white group-hover:translate-x-2 transition-transform duration-300">
+                    <h3 className="text-lg md:text-2xl font-display uppercase text-white group-hover:translate-x-2 transition-transform duration-300">
                       {member.name}
                     </h3>
-                    <span className="text-xs uppercase tracking-widest text-white/40 mt-1 group-hover:translate-x-2 transition-transform duration-300 delay-75">
+                    <span className="text-[10px] md:text-xs uppercase tracking-widest text-white/40 mt-1 group-hover:translate-x-2 transition-transform duration-300 delay-75">
                       {member.role}
                     </span>
                  </div>
