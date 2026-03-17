@@ -12,6 +12,7 @@ import { UploadModal } from './components/UploadModal';
 import { GrainOverlay } from './components/GrainOverlay';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ClientSlider } from './components/ClientSlider';
+import { Philosophy } from './components/Philosophy';
 import { INITIAL_PROJECTS } from './constants';
 import { Project } from './types';
 import { getProjectsFromFirestore } from './services/firebaseService';
@@ -96,6 +97,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <ClientSlider />
+        <Philosophy />
         {loading ? (
           <div className="h-screen w-full flex items-center justify-center bg-[#0a0a0a]">
              <span className="text-white/40 uppercase tracking-widest animate-pulse text-xs">Loading Projects...</span>
