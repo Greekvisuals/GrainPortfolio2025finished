@@ -228,9 +228,4 @@ export const TEAM_MEMBERS = [
     role: "Creative Producer",
     image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Elise%20Headshot%20Best.jpg?alt=media&token=8b0e7edd-d98f-48b0-a8a0-ef5cf7ad80c8"
   },
-  {
-    name: "Carlos Sanches",
-    role: "Head of Communication",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop"
-  }
 ];
