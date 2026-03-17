@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
         </h1>
         
         <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
-          <span>Mini films that sell</span>
+          <span>Strategy-driven brand films that sell</span>
           <span className="hidden md:inline">•</span>
           <span>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         </div>
