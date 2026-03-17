@@ -28,8 +28,13 @@ export const Contact: React.FC = () => {
             <a href="mailto:contact@grainxstudio.com" className="text-xl text-white hover:text-[#0099ff] transition-colors">
               contact@grainxstudio.com
             </a>
+
+            <span className="text-xs uppercase tracking-widest text-white/40 mt-6">Or send us a DM on Instagram</span>
+            <a href="https://www.instagram.com/grainxstudio/" target="_blank" rel="noopener noreferrer" className="text-xl text-white hover:text-[#e67828] transition-colors">
+              @grainxstudio
+            </a>
           </div>
-        </div>
+        </div>            
 
         <div className="bg-white/5 p-8 rounded-sm border border-white/5">
            {/* KEY FIX: Use native form submission with action and method */}
