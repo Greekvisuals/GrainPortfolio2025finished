@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Preloader } from './Preloader';
-import { ArrowUpRight } from 'lucide-react';
+<ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
 
 export const Hero: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -100,7 +100,10 @@ export const Hero: React.FC = () => {
             Work With Us
           </span>
           <div className="absolute right-1 w-10 h-10 md:w-12 md:h-12 bg-white text-[#960a0a] rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] md:group-hover:right-[calc(100%-52px)] group-hover:rotate-45 z-10">
-            <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 md:w-5 md:h-5">
+  <path d="M7 7h10v10"/>
+  <path d="M7 17 17 7"/>
+</svg>
           </div>
         </button>
       </div>
