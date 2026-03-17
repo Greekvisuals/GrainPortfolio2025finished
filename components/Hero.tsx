@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Preloader } from './Preloader';
+import { GlowingButton } from './GlowingButton';
 
 export const Hero: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -80,11 +81,23 @@ export const Hero: React.FC = () => {
           Grain.
         </h1>
         
-        <div className="mt-12 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
-          <span>Brand films that sell</span>
+        <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
+          <span>Mini films that sell</span>
           <span className="hidden md:inline">•</span>
           <span>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         </div>
+
+        <GlowingButton 
+          onClick={() => {
+            const element = document.getElementById('contact-section');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}
+          className="mt-12"
+        >
+          Work With Us
+        </GlowingButton>
       </div>
       
       <div className={`absolute bottom-12 right-12 z-50 text-xs text-white/40 uppercase tracking-widest animate-pulse transition-opacity duration-1000 delay-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
