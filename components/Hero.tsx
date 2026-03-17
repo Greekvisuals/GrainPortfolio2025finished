@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Preloader } from './Preloader';
-<ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
 
 export const Hero: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -81,31 +80,11 @@ export const Hero: React.FC = () => {
           Grain.
         </h1>
         
-        <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
-          <span>Mini films that sell</span>
+        <div className="mt-12 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
+          <span>Brand films that sell</span>
           <span className="hidden md:inline">•</span>
           <span>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         </div>
-
-        <button 
-          onClick={() => {
-            const element = document.getElementById('contact-section');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }}
-          className="mt-12 relative text-xs md:text-sm font-medium tracking-[0.2em] uppercase rounded-full h-12 md:h-14 p-1 pl-6 pr-14 md:pl-8 md:pr-16 group transition-all duration-500 hover:pl-14 hover:pr-6 md:hover:pl-16 md:hover:pr-8 w-fit overflow-hidden cursor-pointer btn-glow-red flex items-center"
-        >
-          <span className="relative z-10 transition-all duration-500">
-            Work With Us
-          </span>
-          <div className="absolute right-1 w-10 h-10 md:w-12 md:h-12 bg-white text-[#960a0a] rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] md:group-hover:right-[calc(100%-52px)] group-hover:rotate-45 z-10">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 md:w-5 md:h-5">
-  <path d="M7 7h10v10"/>
-  <path d="M7 17 17 7"/>
-</svg>
-          </div>
-        </button>
       </div>
       
       <div className={`absolute bottom-12 right-12 z-50 text-xs text-white/40 uppercase tracking-widest animate-pulse transition-opacity duration-1000 delay-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
