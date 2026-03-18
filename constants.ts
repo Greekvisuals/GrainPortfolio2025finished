@@ -217,6 +217,18 @@ export const PROCESS_STEPS = [
   }
 ];
 
+export const CINEMA_GALLERY_IMAGES = [
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20012135_9.5.1.jpg?alt=media&token=6a159da6-cb26-4832-aa53-0acfb35732d1",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20012145_7.2.1.jpg?alt=media&token=f84928e2-b830-4abb-9f29-25eacb20abf9",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20134802_15.1.1.jpg?alt=media&token=8f85e1cf-4dcb-4d98-8b99-6d5d0a80530f",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20134757_14.2.1.jpg?alt=media&token=f73e1e4d-726d-4392-aa0e-b757f2630f25",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20134918_51.1.1.jpg?alt=media&token=15e32340-fb07-41fe-9e24-0574f96cdf69",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20140800_36.3.1.jpg?alt=media&token=d2d29756-ec01-4ce0-8724-f21caab34119",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20140900_63.3.1.jpg?alt=media&token=4aa92fc2-a55b-4fe4-8934-d814ea006609",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20144120_58.4.1.jpg?alt=media&token=e9ace4ca-1caf-4039-937c-84487d227c07",
+  "https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=2000&auto=format&fit=crop"
+];
+
 export const TEAM_MEMBERS = [
   {
     name: "John Antonsen",
