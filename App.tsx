@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { ProjectList } from './components/ProjectList';
 import { ProjectIndex } from './components/ProjectIndex';
 import { VerticalShowcase } from './components/VerticalShowcase';
+import { CinemaGallery } from './components/CinemaGallery';
 import { About } from './components/About';
 import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
@@ -113,6 +114,7 @@ const App: React.FC = () => {
                 projects={projects} 
                 onProjectClick={handleProjectClick}
             />
+            <CinemaGallery />
           </>
         )}
         <About />
