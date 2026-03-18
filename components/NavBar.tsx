@@ -39,7 +39,7 @@ export const NavBar: React.FC<NavBarProps> = ({ onUploadClick, onHomeClick, onPr
         </button>
         <button 
           onClick={onUploadClick}
-          className="border border-white/30 rounded-full px-5 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
+          className="border border-white/30 rounded-full px-5 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 hidden md:block"
         >
           Upload Project
         </button>
