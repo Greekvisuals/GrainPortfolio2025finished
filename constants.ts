@@ -227,6 +227,7 @@ export const CINEMA_GALLERY_IMAGES = [
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20140900_63.3.1.jpg?alt=media&token=4aa92fc2-a55b-4fe4-8934-d814ea006609",
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20144120_58.4.1.jpg?alt=media&token=e9ace4ca-1caf-4039-937c-84487d227c07",
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-02-08%20151859_2.1.1.jpg?alt=media&token=18a99680-0b13-4ad7-bc43-e329e98edb37"
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-02-08%20151859_2.1.1.jpg?alt=media&token=18a99680-0b13-4ad7-bc43-e329e98edb37"
 ];
 
 export const TEAM_MEMBERS = [
