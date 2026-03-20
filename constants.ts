@@ -219,6 +219,7 @@ export const PROCESS_STEPS = [
 
 export const CINEMA_GALLERY_IMAGES = [
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20012135_9.5.1.jpg?alt=media&token=6a159da6-cb26-4832-aa53-0acfb35732d1",
+  "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-20%20072404_47.2.2.jpg?alt=media&token=219b0718-c4fa-400a-9cfa-5edb7ec432ba",
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20012145_7.2.1.jpg?alt=media&token=f84928e2-b830-4abb-9f29-25eacb20abf9",
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20134802_15.1.1.jpg?alt=media&token=8f85e1cf-4dcb-4d98-8b99-6d5d0a80530f",
   "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Cinema%20Gallery%2FStill%202026-03-18%20134757_14.2.1.jpg?alt=media&token=f73e1e4d-726d-4392-aa0e-b757f2630f25",
