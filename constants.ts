@@ -179,7 +179,7 @@ export const MOCK_REVIEWS: Review[] = [
     id: 'r3',
     clientName: 'Linda Rostova',
     company: 'Independent Director',
-    text: "Working with them on one of my shortfilm "quite place" was a masterclass in production workflow. They elevated every frame.",
+    text: "Working with them on one of my shortfilm quite place was a masterclass in production workflow. They elevated every frame.",
     rating: 5
   }
 ];
