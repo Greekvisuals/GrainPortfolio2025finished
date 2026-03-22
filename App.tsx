@@ -8,6 +8,7 @@ import { CinemaGallery } from './components/CinemaGallery';
 import { About } from './components/About';
 import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
+import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { UploadModal } from './components/UploadModal';
 import { GrainOverlay } from './components/GrainOverlay';
@@ -120,6 +121,7 @@ const App: React.FC = () => {
         <About />
         <Reviews />
         <Contact />
+        <FAQ />
       </main>
 
       <Footer />
