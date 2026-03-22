@@ -8,6 +8,7 @@ import { CinemaGallery } from './components/CinemaGallery';
 import { About } from './components/About';
 import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
+import { INITIAL_PROJECTS, SEO_FAQS } from './constants';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { UploadModal } from './components/UploadModal';
@@ -15,7 +16,6 @@ import { GrainOverlay } from './components/GrainOverlay';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ClientSlider } from './components/ClientSlider';
 import { Philosophy } from './components/Philosophy';
-import { INITIAL_PROJECTS, SEO_FAQS } from './constants';
 import { Project } from './types';
 import { getProjectsFromFirestore } from './services/firebaseService';
 
