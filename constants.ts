@@ -251,7 +251,7 @@ export const SEO_FAQS = [
   },
   {
     question: "Do you only produce brand films in Marbella?",
-    answer: "While our roots and primary studio are based in Marbella, Spain, we produce cinematic brand films worldwide. Our team frequently travels internationally for clients who demand the highest tier of visual storytelling, bringing our signature cinematic aesthetic to global campaigns."
+    answer: "While our roots and primary studio are based in Marbella, Spain and Oslo, Norway, we produce cinematic brand films worldwide. Our team frequently travels internationally for clients who demand the highest tier of visual storytelling, bringing our signature cinematic aesthetic to global campaigns."
   },
   {
     question: "What is a cinematic brand film?",
