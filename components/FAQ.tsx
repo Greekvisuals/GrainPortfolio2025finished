@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 
 export interface FAQItem {
   question: string;
@@ -56,7 +55,21 @@ export const FAQ: React.FC<FAQProps> = ({
                   <div
                     className={`transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0'}`}
                   >
-                    <ChevronDown className="w-5 h-5 text-white/60" />
+                    {/* Replaced lucide-react with a raw SVG */}
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="24" 
+                      height="24" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      className="w-5 h-5 text-white/60"
+                    >
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
                   </div>
                 </button>
                 
