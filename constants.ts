@@ -243,3 +243,26 @@ export const TEAM_MEMBERS = [
     image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Elise%20Headshot%20Best.jpg?alt=media&token=8b0e7edd-d98f-48b0-a8a0-ef5cf7ad80c8"
   },
 ];
+
+export const SEO_FAQS = [
+  {
+    question: "What makes your video production in Marbella different from everyone else?",
+    answer: "As a premier video production company in Marbella, we don't just shoot videos; we craft cinematic brand films. Our approach combines high-end cinema cameras, meticulous lighting, and Hollywood-grade color grading to ensure your brand stands out globally. We understand the unique luxury market of Marbella and translate that into visual storytelling."
+  },
+  {
+    question: "Do you only produce brand films in Marbella?",
+    answer: "While our roots and primary studio are based in Marbella, Spain, we produce cinematic brand films worldwide. Our team frequently travels internationally for clients who demand the highest tier of visual storytelling, bringing our signature cinematic aesthetic to global campaigns."
+  },
+  {
+    question: "What is a cinematic brand film?",
+    answer: "A cinematic brand film is a high-end promotional video that utilizes the techniques, equipment, and narrative structures of feature films. Unlike standard corporate videos, cinematic brand films focus on emotional resonance, breathtaking visuals, and compelling storytelling to elevate your brand's perception and connect deeply with your audience."
+  },
+  {
+    question: "How long does a typical video production project take?",
+    answer: "For a premium brand film in Marbella or internationally, the timeline typically ranges from 2 to 4 weeks. This includes pre-production (concept development, scripting, location scouting), production (filming), and post-production (editing, sound design, color grading). We ensure every frame meets our rigorous cinematic standards."
+  },
+  {
+    question: "Do you handle the entire video production process?",
+    answer: "Yes, we are a full-service video production agency. From the initial creative concept to the final color-graded cinematic brand film, we handle everything. This includes casting, location scouting in Marbella and beyond, directing, filming, and comprehensive post-production."
+  }
+];
