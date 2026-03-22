@@ -15,7 +15,7 @@ import { GrainOverlay } from './components/GrainOverlay';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ClientSlider } from './components/ClientSlider';
 import { Philosophy } from './components/Philosophy';
-import { INITIAL_PROJECTS } from './constants';
+import { INITIAL_PROJECTS, SEO_FAQS } from './constants';
 import { Project } from './types';
 import { getProjectsFromFirestore } from './services/firebaseService';
 
@@ -121,7 +121,10 @@ const App: React.FC = () => {
         <About />
         <Reviews />
         <Contact />
-        <FAQ />
+        <FAQ 
+          items={SEO_FAQS} 
+          subtitle="Everything you need to know about our cinematic brand films and video production services in Marbella and worldwide."
+        />
       </main>
 
       <Footer />
