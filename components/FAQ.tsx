@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 export interface FAQItem {
@@ -41,40 +40,40 @@ export const FAQ: React.FC<FAQProps> = ({
         </div>
 
         <div className="space-y-4">
-          {items.map((faq, index) => (
-            <div 
-              key={index} 
-              className="border border-white/10 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm"
-            >
-              <button
-                onClick={() => toggleFaq(index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+          {items.map((faq, index) => {
+            const isOpen = openIndex === index;
+            
+            return (
+              <div 
+                key={index} 
+                className="border border-white/10 rounded-lg overflow-hidden bg-white/5 backdrop-blur-sm"
               >
-                <span className="text-lg font-medium text-white">{faq.question}</span>
-                <motion.div
-                  animate={{ rotate: openIndex === index ? 180 : 0 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                 >
-                  <ChevronDown className="w-5 h-5 text-white/60" />
-                </motion.div>
-              </button>
-              
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                  <span className="text-lg font-medium text-white">{faq.question}</span>
+                  <div
+                    className={`transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0'}`}
                   >
+                    <ChevronDown className="w-5 h-5 text-white/60" />
+                  </div>
+                </button>
+                
+                <div 
+                  className={`grid transition-all duration-300 ease-in-out ${
+                    isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}
+                >
+                  <div className="overflow-hidden">
                     <div className="px-6 pb-5 text-white/60 leading-relaxed">
                       {faq.answer}
                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
