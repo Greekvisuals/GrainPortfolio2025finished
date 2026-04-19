@@ -235,7 +235,7 @@ export const TEAM_MEMBERS = [
   {
     name: "John Antonsen",
     role: "Director / DOP / Head of Post",
-    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/John%20med%20Gimbal%20Headshots.jpg?alt=media&token=5f097cfb-fc41-4750-8139-2ca421bd7457"
+    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Still%202026-04-19%20120121_1.25.17.jpg?alt=media&token=a8243925-9861-42e6-8427-d74b4387513e"
   },
   {
     name: "Elise Bjørnøs",
