@@ -263,8 +263,7 @@ export const SEO_FAQS = [
   },
   {
     question: "How much does 5 minute athlete documentary cost?",
-    answer: "The cost of an athlete documentary typically ranges from €2,500 to €7,500+, depending heavily on the project's complexity and scope. Factors that influence the budget include the number of shooting days, travel requirements, crew size, specialized equipment (like drones or underwater housings), and post-production needs such as original scoring and advanced color grading. We customize every quote to align with your specific creative vision."
-  },   
+    answer: "The cost of an athlete documentary typically ranges from €2,500 to €7,500+, depending heavily on the project's complexity and scope. Factors that influence the budget include the number of shooting days, travel requirements, crew size, specialized equipment (like drones or underwater housings), and post-production needs such as original scoring and advanced color grading. We customize every quote to align with your specific creative vision." 
   {
     question: "Do you handle the entire video production process?",
     answer: "Yes, we are a full-service video production agency. From the initial creative concept to the final color-graded cinematic brand film, we handle everything. This includes casting, location scouting in Marbella and beyond, directing, filming, and comprehensive post-production."
