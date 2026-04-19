@@ -46,7 +46,7 @@ Every project is approached with a director’s eye and a strategist’s mindset
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
              {TEAM_MEMBERS.map((member, index) => (
                <div key={index} className="group cursor-pointer">
-                 <div className="relative w-full aspect-[3/4] overflow-hidden bg-[#111] mb-4 md:mb-6 grayscale hover:grayscale-0 transition-all duration-700 ease-out">
+                 <div className="relative w-full aspect-[3/4] overflow-hidden bg-[#111] mb-4 md:mb-6 transition-all duration-700 ease-out">
                     <img 
                       src={member.image} 
                       alt={member.name}
