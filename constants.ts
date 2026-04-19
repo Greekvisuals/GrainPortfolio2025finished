@@ -240,7 +240,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Elise Bjørnøs",
     role: "Creative Producer",
-    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Elise%20Headshot%20Best.jpg?alt=media&token=8b0e7edd-d98f-48b0-a8a0-ef5cf7ad80c8"
+    image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Still%202026-04-19%20163557_2.7.1.jpg?alt=media&token=73614452-7c7b-46bd-bad9-f8849827e898"
   },
 ];
 
