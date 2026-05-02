@@ -16,7 +16,7 @@ Rather than producing disposable content, we focus on creating visual foundation
 
 Every project is approached with a director’s eye and a strategist’s mindset. From concept to final film, we stay fully involved to ensure creative consistency, strong narrative, and a visual identity that stands apart in crowded markets.
             <br/><br/>
-            Strategic cinema for brands that want to be remembered. 
+            Strategic cinema for brands that want to be seen, felt and remembered. 
           </p>
         </div>
 
