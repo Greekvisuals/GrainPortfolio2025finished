@@ -9,7 +9,7 @@ export const About: React.FC = () => {
       <div className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <h2 className="text-3xl md:text-5xl font-display leading-tight text-white/90 mb-8">
-            At Grain, we build identity-defining films and visual assets for outdoor and performance brands turning them into cult identities people instantly remember.
+            At Grain, We produce identity-defining visual assets for ambitious brands that want to reach their full potential.
           </h2>
           <p className="text-white/60 leading-relaxed max-w-md">
 Rather than producing disposable content, we focus on creating visual foundations that shape how a brand is perceived across campaigns, platforms, and audiences.
