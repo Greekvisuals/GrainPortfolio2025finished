@@ -99,7 +99,6 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <ClientSlider />
-        <Philosophy />
         {loading ? (
           <div className="h-screen w-full flex items-center justify-center bg-[#0a0a0a]">
              <span className="text-white/40 uppercase tracking-widest animate-pulse text-xs">Loading Projects...</span>
@@ -121,6 +120,7 @@ const App: React.FC = () => {
         <About />
         <Reviews />
         <Contact />
+        <Philosophy />
         <FAQ 
           items={SEO_FAQS} 
           subtitle="Everything you need to know about our cinematic brand films and video production services in Marbella and worldwide."
