@@ -15,8 +15,8 @@ export const Manifesto: React.FC = () => {
           <p className="text-2xl md:text-3xl lg:text-[34px] font-medium tracking-tight text-white leading-[1.1] max-w-6xl" style={{ fontFamily: "'Playfair Display', serif" }}>
            Strong visuals aren’t optional. They’re how serious brands compete. <br className="hidden lg:block"/>
            We partner with ambitious brands to build a visual presence that<br className="hidden lg:block"/>
-           earns <span className="italic">credibility</span>, deepens <span className="italic">trust</span>, and gives your team assets that work<br className="hidden lg:block"/>
-           across every channel you show up on -  not just once, but over time. <br className="hidden lg:block"/>
+           build <span className="italic text-halation">trust</span>, elevates <span className="italic text-halation">perception</span>, and gives your team assets that drives<br className="hidden lg:block"/>
+           compounding results across every channel long after it’s delivered.  <br className="hidden lg:block"/>
           
           </p>
         </motion.div>
