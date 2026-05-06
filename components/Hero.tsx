@@ -77,16 +77,29 @@ export const Hero: React.FC = () => {
 
       {/* Hero Content - Above Video (z-50) */}
       <div className={`relative z-50 text-center flex flex-col items-center transition-all duration-1000 delay-500 ${isLoading ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}`}>
-        <h1 className="text-[15vw] leading-[0.9] font-display font-medium uppercase tracking-tight mix-blend-overlay text-white opacity-90">
-          Grain.
-        </h1>
-        
-        <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-24 text-xs md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
-          <span>BRAND FILMS & COMMERCIAL VIDEO PRODUCTION</span>
+        <div className="mt-20 mb-6 flex flex-col md:flex-row gap-4 md:gap-24 text-s md:text-sm font-medium tracking-wide text-white/80 uppercase items-center">
+          <h2>PRODUCTION · CREATIVE · STRATEGY</h2>
           <span className="hidden md:inline">•</span>
           <span>{new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         </div>
 
+        <h1 className="sr-only">Brand Films & Commercial Video Production | Grain Studio Marbella</h1>
+        <div aria-hidden="true" className="text-[15vw] leading-[0.9] font-display font-medium uppercase tracking-tight mix-blend-overlay text-white opacity-90">
+          Grain.
+        </div>
+
+        {/* Headline & Subheading Inspired by Reference */}
+        <div className="mt-12 md:mt-16 flex flex-col items-center max-w-5xl px-4 animate-fade-in">
+          <h2 className="text-3xl md:text-[3.5rem] font-medium tracking-tight text-white leading-[1.05] text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Your brand deserves to <br />
+            reach <span className="italic font-medium text-halation">it's full potential.</span>
+          </h2>
+          <p className="mt-8 text-base md:text-xl text-white/50 max-w-2xl font-light tracking-wide leading-relaxed text-center">
+            We help established businesses close the gap between <br className="hidden md:block" />
+            how good they are and how they're perceived.
+          </p>
+        </div>
+        
         <GlowingButton 
           onClick={() => {
             const element = document.getElementById('contact-section');
@@ -94,7 +107,7 @@ export const Hero: React.FC = () => {
               element.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
           }}
-          className="mt-12"
+          className="mt-16 md:mt-24 scale-110"
         >
           Work With Us
         </GlowingButton>
