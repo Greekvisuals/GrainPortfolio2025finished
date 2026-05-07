@@ -91,11 +91,11 @@ export const Hero: React.FC = () => {
         {/* Headline & Subheading Inspired by Reference */}
         <div className="mt-12 md:mt-16 flex flex-col items-center max-w-5xl px-4 animate-fade-in">
           <h2 className="text-3xl md:text-[3.5rem] font-medium tracking-tight text-white leading-[1.05] text-center" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Your brand deserves to <br />
+            Your company deserves to <br />
             reach <span className="italic font-medium text-halation">it's full potential.</span>
           </h2>
           <p className="mt-8 text-base md:text-xl text-white/50 max-w-2xl font-light tracking-wide leading-relaxed text-center">
-            We help established businesses close the gap between <br className="hidden md:block" />
+            We help ambitious businesses close the gap between <br className="hidden md:block" />
             how good they are and how they're perceived.
           </p>
         </div>
