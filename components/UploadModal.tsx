@@ -30,6 +30,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
   const [file, setFile] = useState<File | null>(null);
   const [videoUrlInput, setVideoUrlInput] = useState('');
   const [description, setDescription] = useState('');
+  const [isRealEstate, setIsRealEstate] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
 
@@ -48,7 +49,6 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
     setIsLoggingIn(true);
     try {
       await loginUser(email, password);
-      // Login successful, user state will update via observer
     } catch (error: any) {
       console.error("Login failed", error);
       setAuthError('Invalid email or password.');
@@ -87,7 +87,8 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
         videoUrl: finalVideoUrl,
         description,
         createdAt: Date.now(),
-        format: videoFormat
+        format: videoFormat,
+        isRealEstate: isRealEstate
       };
 
       const savedProject = await addProjectToFirestore(newProjectData);
@@ -109,12 +110,13 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
     setFile(null);
     setVideoUrlInput('');
     setDescription('');
+    setIsRealEstate(false);
     setIsUploading(false);
     setInputType('file');
     setEmail('');
     setPassword('');
     setAuthError('');
-    setVideoFormat('landscape'); // Reset format
+    setVideoFormat('landscape'); 
   };
 
   return (
@@ -123,7 +125,6 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
       
       <div className="relative bg-[#111] border border-white/10 w-full max-w-lg p-8 rounded-lg shadow-2xl max-h-[90vh] overflow-y-auto">
         
-        {/* LOGIN VIEW */}
         {!user ? (
           <div>
             <h2 className="text-2xl font-display uppercase text-white mb-2">Admin Access</h2>
@@ -134,7 +135,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Email</label>
                 <input 
                   type="email" 
-                  value={email}
+                  value={email || ''}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors"
                   placeholder="admin@grain.com"
@@ -144,7 +145,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Password</label>
                 <input 
                   type="password" 
-                  value={password}
+                  value={password || ''}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors"
                   placeholder="••••••••"
@@ -174,14 +175,12 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
             </form>
           </div>
         ) : (
-          /* UPLOAD VIEW (Authenticated) */
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-display uppercase text-white">Upload Project</h2>
               <span className="text-xs text-white/40">Logged in as {user.email}</span>
             </div>
 
-            {/* Format Selection */}
             <div>
               <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Project Format</label>
               <div className="grid grid-cols-2 gap-4">
@@ -212,7 +211,6 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
               </div>
             </div>
             
-            {/* Input Type Switcher */}
             <div className="flex bg-white/5 rounded-full p-1 border border-white/10">
               <button
                 type="button"
@@ -238,7 +236,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
               <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Project Title</label>
               <input 
                 type="text" 
-                value={title}
+                value={title || ''}
                 onChange={(e) => setTitle(e.target.value)}
                 className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors"
                 placeholder="e.g. Neon Nights"
@@ -248,9 +246,15 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
             <div>
               <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Category</label>
               <select 
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors"
+                value={category || ''}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                  // Auto-toggle real estate if category suggests it
+                  if (['Luxury Villa', 'Real Estate', 'Property Showcase'].includes(e.target.value)) {
+                    setIsRealEstate(true);
+                  }
+                }}
+                className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors mb-4"
               >
                 <option value="">Select Category</option>
                 <option value="Brand Film">Brand Film</option>
@@ -259,7 +263,22 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 <option value="Music Video">Music Video</option>
                 <option value="UGC">UGC</option>
                 <option value="Showcase">Showcase</option>
+                <option value="Luxury Villa">Luxury Villa</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Property Showcase">Property Showcase</option>
               </select>
+
+              <label className="flex items-center gap-3 cursor-pointer group">
+                <div 
+                  onClick={() => setIsRealEstate(!isRealEstate)}
+                  className={`w-10 h-5 rounded-full transition-all relative ${isRealEstate ? 'bg-[#921713]' : 'bg-white/10'}`}
+                >
+                  <div className={`absolute top-1 w-3 h-3 rounded-full bg-white transition-all ${isRealEstate ? 'left-6' : 'left-1'}`} />
+                </div>
+                <span className="text-[10px] uppercase tracking-widest text-white/60 group-hover:text-white transition-colors">
+                  Add to Real Estate Portfolio
+                </span>
+              </label>
             </div>
 
             {inputType === 'file' ? (
@@ -277,7 +296,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 <label className="block text-xs uppercase tracking-widest text-white/60 mb-2">Video URL</label>
                 <input 
                   type="url" 
-                  value={videoUrlInput}
+                  value={videoUrlInput || ''}
                   onChange={(e) => setVideoUrlInput(e.target.value)}
                   className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors"
                   placeholder="https://example.com/my-video.mp4"
@@ -298,7 +317,7 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 </button>
               </div>
               <textarea 
-                value={description}
+                value={description || ''}
                 onChange={(e) => setDescription(e.target.value)}
                 className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors h-24 resize-none"
                 placeholder="Enter description or generate one..."
