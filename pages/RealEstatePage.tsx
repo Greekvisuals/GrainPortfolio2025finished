@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { RealEstateHero } from '../components/real-estate/RealEstateHero';
+import { RealEstateFooter } from './components/RealEstate/RealEstateFooter';
 import { RealEstateManifesto } from '../components/real-estate/RealEstateManifesto';
 import { BrandAnalysisSection } from '../components/real-estate/BrandAnalysisSection';
 import { RealEstateServices } from '../components/real-estate/RealEstateServices';
