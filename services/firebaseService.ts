@@ -5,6 +5,8 @@ import { signInWithEmailAndPassword, onAuthStateChanged, User } from "firebase/a
 import { Project } from "../types";
 
 const PROJECTS_COLLECTION = "projects";
+const REAL_ESTATE_COLLECTION = "real-estate-projects";
+const MESSAGES_COLLECTION = "messages";
 
 export const uploadVideoToStorage = async (file: File): Promise<string> => {
   try {
@@ -20,7 +22,8 @@ export const uploadVideoToStorage = async (file: File): Promise<string> => {
 
 export const addProjectToFirestore = async (project: Omit<Project, "id">): Promise<Project> => {
   try {
-    const docRef = await addDoc(collection(db, PROJECTS_COLLECTION), {
+    const collectionName = project.isRealEstate ? REAL_ESTATE_COLLECTION : PROJECTS_COLLECTION;
+    const docRef = await addDoc(collection(db, collectionName), {
       ...project,
       createdAt: Date.now()
     });
@@ -31,18 +34,31 @@ export const addProjectToFirestore = async (project: Omit<Project, "id">): Promi
   }
 };
 
-export const getProjectsFromFirestore = async (): Promise<Project[]> => {
+export const getProjectsFromFirestore = async (isRealEstate: boolean = false): Promise<Project[]> => {
   try {
-    const q = query(collection(db, PROJECTS_COLLECTION), orderBy("createdAt", "desc"));
+    const collectionName = isRealEstate ? REAL_ESTATE_COLLECTION : PROJECTS_COLLECTION;
+    const q = query(collection(db, collectionName), orderBy("createdAt", "desc"));
     const querySnapshot = await getDocs(q);
     return querySnapshot.docs.map(doc => ({
       id: doc.id,
       ...doc.data()
     } as Project));
   } catch (error) {
-    console.error("Error getting projects:", error);
-    // Return empty array instead of throwing to allow UI to render even if permission denied initially
+    console.error(`Error getting ${isRealEstate ? 'real estate' : 'main'} projects:`, error);
     return [];
+  }
+};
+
+export const addContactMessage = async (data: any) => {
+  try {
+    await addDoc(collection(db, MESSAGES_COLLECTION), {
+      ...data,
+      createdAt: Date.now()
+    });
+    return true;
+  } catch (error) {
+    console.error("Error saving message:", error);
+    return false;
   }
 };
 
