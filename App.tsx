@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-import { Footer } from './components/Footer';
-import { RealEstateFooter } from './components/real-estate/RealEstateFooter';
 import { UploadModal } from './components/UploadModal';
 import { GrainOverlay } from './components/GrainOverlay';
 import { ProjectDetail } from './components/ProjectDetail';
@@ -81,8 +79,6 @@ const App: React.FC = () => {
           element={<RealEstatePage />} 
         />
       </Routes>
-
-      {location.pathname === '/real-estate' ? <RealEstateFooter /> : <Footer />}
 
       <UploadModal 
         isOpen={isUploadOpen}
