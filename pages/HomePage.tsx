@@ -12,6 +12,7 @@ import { FAQ } from '../components/FAQ';
 import { Philosophy } from '../components/Philosophy';
 import { Manifesto } from '../components/Manifesto';
 import { ClientSlider } from '../components/ClientSlider';
+import { Footer } from '../components/Footer';
 import { Project } from '../types';
 import { SEO_FAQS } from '../constants';
 
@@ -67,6 +68,7 @@ export const HomePage: React.FC<HomePageProps> = ({ projects, loading, handlePro
         items={SEO_FAQS} 
         subtitle="Everything you need to know about our cinematic brand films and video production services worldwide."
       />
+      <Footer />
     </main>
   );
 };
