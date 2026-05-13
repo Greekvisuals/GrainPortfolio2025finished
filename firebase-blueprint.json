@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A cinematic project or portfolio piece",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "year": { "type": "string" },
+        "videoUrl": { "type": "string" },
+        "thumbnailUrl": { "type": "string" },
+        "description": { "type": "string" },
+        "format": { "type": "string", "enum": ["landscape", "vertical"] },
+        "isRealEstate": { "type": "boolean" },
+        "createdAt": { "type": "number" }
+      },
+      "required": ["title", "category", "videoUrl"]
+    }
+  },
+  "firestore": {
+    "projects": {
+      "schema": "Project",
+      "description": "Main portfolio projects collection"
+    },
+    "real-estate-projects": {
+      "schema": "Project",
+      "description": "Specialized real estate cinematic productions"
+    },
+    "messages": {
+      "schema": {
+        "title": "Message",
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "message": { "type": "string" },
+          "createdAt": { "type": "number" }
+        }
+      },
+      "description": "Contact form submissions"
+    }
+  }
+}
