@@ -4,40 +4,36 @@ import { Plus, Minus } from 'lucide-react';
 
 const FAQS = [
   {
-    question: "What exactly is the Film Grade Content System™?",
-    answer: "It is our proprietary boutique content engine designed specifically for elite real estate. Unlike 'batch' filming, it is a strategic monthly system for Scandinavian Real Estate video production that produces cinematic, high-impact visuals—from heritage listing films to agency brand positioning and identity building. It ensures your brand remains active and your digital presence stays as premium as the properties you represent."
+  question: "What is the Film Grade Content System™?",
+    answer: "It’s our monthly content partnership for real estate agencies that want to build a consistent and strong visual identity online. We deliver listing films, agent films and brand content that make your listings and brand look trustworthy, premium and more memorable in a highly competitive market. It ensures your digital presence is as refined as the properties you represent. Not needing to worry about what to post next."
   },
   {
-    question: "Why invest in high-end property film and identity when standard content is cheaper?",
-    answer: "In Marbella's luxury tier, the image is the valuation. Generic content suggests a generic property. Scandinavian Real Estate video production doesn't just show a space; it builds an emotional legacy that justifies premium pricing and attracts high-net-worth individuals who buy on feeling and authority, not just square meters."
+    question: "Why invest in high-end visuals when standard content is cheaper?",
+    answer: "Because presentation affects perception. High-end visuals help your agency look more professional, justify premium commissions, attract high-net-worth individuals, and make properties feel more valuable. In a competitive market, average content is easy to ignore. But emotional content that makes you feel something is hard to ignore." 
   },
   {
-    question: "Does high-end visual branding actually shorten the sales cycle?",
-    answer: "Absolutely. Quality visuals pre-qualify the lead. By the time a client reaches out, they have already 'lived' in the space through our film. This eliminates curiosity-seekers and ensures that physical viewings are restricted to serious buyers who are already emotionally invested."
+    question: "How does this impact the sales cycle for listings?",
+    answer: "Quality visuals pre-qualify the lead. By the time a client reaches out, they have already 'lived' in the space through our film. This eliminates curiosity-seekers and ensures that physical viewings are restricted to serious buyers who are already emotionally invested, often leading to faster decisions and higher offers." 
   },
   {
-    question: "We have an in-house team. Why partner with Grain?",
-    answer: "Consistency is the enemy of distinction. In-house teams are often optimized for volume, not impact. We are a boutique partner that focuses on 'The One'-the listing or agency campaign that needs to stand out as a masterpiece. We bring a cinematic DOP lens and high-end post-production that local teams rarely match."
+    question: "We already have an in-house team. Why partner with Grain?",
+    answer: "Efficiency is the enemy of distinction. In-house teams are often optimized for speed and volume. We are a boutique partner focusing on impact. We position your most important listings as masterpieces, setting a standard that standard in-house equipment and workflows rarely reach." 
   },
   {
-    question: "What is the turnaround time for a luxury listing heritage film?",
-    answer: "Quality cannot be rushed, but strategy requires speed. We typically deliver a first edit within 7-10 business days of the final shoot day. For agency system content (monthly retainers), we operate on a strict delivery calendar to ensure your brand presence never fades."
+    question: "What is the turnaround time for a high-end property film?",
+    answer: "We usually deliver the first edit within 7 business days after filming. For monthly partners, we work on a structured content schedule to keep your brand consistently active online."
   },
   {
     question: "How do we measure the ROI of investing in visual identity?",
-    answer: "ROI in the luxury sector is measured by two pillars: Perceived Value and Brand Compounding. Higher quality content allows you to maintain premium commission structures and attracts more exclusive listings. Your brand becomes the 'obvious choice' for elite sellers, which is the ultimate leverage."
+    answer: "ROI is measured by perceived authority. Investing in a strong visual identity allows you to maintain premium commission structures and attracts more exclusive listings. When you look like the market leader, you become the 'obvious choice' for serious sellers, providing the ultimate leverage in listing presentations."
   },
   {
     question: "Do you handle the creative direction or do we provide the brief?",
-    answer: "We are a full-service creative partner. While we align with your agency's goals, we specialize in Discovery & Direction. We audit the property or brand, identify the unique 'story' that will sell, and handle everything from script to video production and finale assets. You simply provide the vision; we execute the legacy."
-  },
-  {
-    question: "How does investing in identity and Scandinavian Real Estate video production directly impact my business?",
-    answer: "Perceived value is the primary driver of high-end real estate. By elevating your visual identity with our Film Grade Content Systems, you shift from being a commodity to a premium authority. This leads to higher-quality leads, immediate trust from elite clients, and the leverage to justify premium valuations."
+    answer: "We handle the full creative process. We work with your goals, develop the concept, plan the shoot, and deliver the final content. You don’t need to manage the creative side yourself."
   },
   {
     question: "Who is this for? I’m not sure if I qualify.",
-    answer: "We partner with visionary agents and agencies who understand that 'good enough' is the enemy of 'exceptional'. This is for those who value their reputation, their perceived authority, and the trust that high-end production commands. If you are seeking the lowest possible price point, we aren't the right fit. But if you value reaching your full potential, we should talk."
+    answer: "We partner with Scandinavian agents and agencies who understand that 'good enough' is the enemy of the extraordinary. This is for those who care about how they show up, and understand the power of an online presence in today's digital society. If you are seeking the cheapest option, we aren't the right fit. But if you want to reach your brand's full potential, we should connect further."
   }
 ];
 
