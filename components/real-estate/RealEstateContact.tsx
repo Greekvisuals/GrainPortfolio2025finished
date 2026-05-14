@@ -46,11 +46,11 @@ export const RealEstateContact: React.FC = () => {
           <span className="text-[10px] uppercase tracking-[0.8em] text-[#921713]/40 mb-6 md:mb-8 block font-bold">Secure Your Edge</span>
           <h2 className="text-4xl md:text-7xl font-display uppercase text-[#921713] mb-8 leading-[0.9] tracking-tighter" style={{ fontFamily: "'Playfair Display', serif" }}>
             Partner with <br />
-            <span className="italic">the elite.</span>
+            <span className="italic">Grain.</span>
           </h2>
           <p className="text-[#921713]/70 text-base md:text-lg leading-relaxed max-w-md mb-12 font-light">
             Average production is no longer enough to compete in Marbella's luxury tier. 
-            Partner with us to build a visual legacy that commands attention and justifies premium valuations.
+            Partner with us to build a visual identity that builds trust, commands attention and justifies premium comissions.
           </p>
           
           <div className="space-y-8">
