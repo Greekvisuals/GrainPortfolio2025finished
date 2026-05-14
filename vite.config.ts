@@ -18,6 +18,15 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        rollupOptions: {
+          input: {
+            main: path.resolve(__dirname, 'index.html'),
+            marbella: path.resolve(__dirname, 'video-production-marbella/index.html'),
+            assets: path.resolve(__dirname, 'assets/index.html'),
+          }
+        }
       }
     };
 });

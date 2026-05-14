@@ -16,7 +16,7 @@ export const FAQ: React.FC<FAQProps> = ({
   title = "Frequently Asked Questions", 
   subtitle, 
   items,
-  className = "py-24 px-6 bg-[#0a0a0a] border-t border-white/10"
+  className = "py-12 md:py-24 px-6 bg-[#0a0a0a] border-t border-white/10"
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -27,8 +27,8 @@ export const FAQ: React.FC<FAQProps> = ({
   return (
     <section className={className} id="faq-section">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-display font-medium uppercase tracking-tight text-white mb-4">
+        <div className="mb-8 md:mb-16 text-center">
+          <h2 className="text-2xl md:text-5xl font-display font-medium uppercase tracking-tight text-white mb-4">
             {title}
           </h2>
           {subtitle && (
@@ -38,7 +38,7 @@ export const FAQ: React.FC<FAQProps> = ({
           )}
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-2 md:space-y-4">
           {items.map((faq, index) => {
             const isOpen = openIndex === index;
             
@@ -49,13 +49,12 @@ export const FAQ: React.FC<FAQProps> = ({
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+                  className="w-full px-6 py-4 md:py-5 flex items-center justify-between text-left focus:outline-none"
                 >
-                  <span className="text-lg font-medium text-white">{faq.question}</span>
+                  <span className="text-base md:text-lg font-medium text-white">{faq.question}</span>
                   <div
                     className={`transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-180' : 'rotate-0'}`}
                   >
-                    {/* Replaced lucide-react with a raw SVG */}
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       width="24" 
@@ -79,7 +78,7 @@ export const FAQ: React.FC<FAQProps> = ({
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 pb-5 text-white/60 leading-relaxed">
+                    <div className="px-6 pb-4 md:pb-5 text-white/60 leading-relaxed text-sm md:text-base">
                       {faq.answer}
                     </div>
                   </div>

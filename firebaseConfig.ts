@@ -22,7 +22,7 @@ export const db = getFirestore(app);
 export const storage = getStorage(app);
 export const auth = getAuth(app);
 
-// Initialize Analytics conditionally and asynchronously to avoid registration errors
+// Initialize Analytics conditionally
 isSupported().then((supported) => {
   if (supported) {
     const analytics = getAnalytics(app);

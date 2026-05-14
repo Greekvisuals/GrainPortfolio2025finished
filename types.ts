@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -12,6 +11,10 @@ export interface Project {
   client?: string;
   headline?: string;
   credits?: { role: string; name: string }[];
+  // Added optional properties to fix type errors in ProjectList.tsx
+  thumbnailUrl?: string;
+  videoMobileUrl?: string;
+  isRealEstate?: boolean;
 }
 
 export interface Review {
