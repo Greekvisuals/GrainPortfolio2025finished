@@ -56,6 +56,7 @@ export const HomePage: React.FC<HomePageProps> = ({ projects, loading, handlePro
           <VerticalShowcase 
               projects={mainProjects} 
               onProjectClick={handleProjectClick}
+          />
         </>
       )}
       <About />
