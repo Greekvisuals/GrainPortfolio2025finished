@@ -46,8 +46,10 @@ export const RealEstateHero: React.FC = () => {
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:gap-10">
-            <GlowingButton className="!h-11 md:!h-16 !tracking-[0.2em] md:!tracking-[0.3em] !text-[10px] md:!text-sm">
-              onClick={() => window.open("https://www.grainanalysis.com/", "_blank")}
+            <GlowingButton 
+              onClick={() => window.open('https://www.grainanalysis.com/', '_blank')}
+              className="!h-11 md:!h-16 !tracking-[0.2em] md:!tracking-[0.3em] !text-[10px] md:!text-sm"
+            >
               Try Free Analysis
             </GlowingButton>
             <button 
