@@ -57,9 +57,9 @@ export const RealEstatePage: React.FC = () => {
         setProgress(100);
         finishTimeout = setTimeout(() => {
           setFullPageLoading(false);
-          // Unmount after transition
-          setTimeout(() => setShowPreloader(false), 1200);
-        }, 600);
+          // Unmount after transition - increased delay for smoother reveal
+          setTimeout(() => setShowPreloader(false), 1500);
+        }, 1200);
       }
     };
 
