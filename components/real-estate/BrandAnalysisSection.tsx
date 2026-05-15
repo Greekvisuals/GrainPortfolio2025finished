@@ -60,7 +60,10 @@ export const BrandAnalysisSection: React.FC = () => {
               </div>
 
               <div className="flex justify-center lg:justify-start">
-                <GlowingButton className="!h-14 md:!h-16 !text-[10px] !tracking-[0.4em]">
+                <GlowingButton 
+                  onClick={() => window.open('https://www.grainanalysis.com/', '_blank')}
+                  className="!h-14 md:!h-16 !text-[10px] !tracking-[0.4em]"
+                >
                   Get My Analysis
                 </GlowingButton>
               </div>
