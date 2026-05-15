@@ -14,10 +14,9 @@ export const RealEstatePreloader: React.FC<RealEstatePreloaderProps> = ({ progre
            initial={{ opacity: 0, scale: 0.95 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 1, ease: "easeOut" }}
-           className="text-8xl md:text-[10rem] font-display font-medium tracking-tighter text-[#921713] mb-8 md:mb-12 select-none"
-           style={{ fontFamily: "'Playfair Display', serif" }}
+           className="text-8xl md:text-[10rem] font-display font-bold tracking-tighter text-[#921713] mb-12 md:mb-16 select-none"
          >
-           Grain.
+           GRAIN.
          </motion.div>
 
          {/* Progress Bar Container */}
