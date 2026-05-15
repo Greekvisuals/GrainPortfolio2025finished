@@ -11,6 +11,7 @@ import { RealEstateTeam } from '../components/real-estate/RealEstateTeam';
 import { RealEstateFAQ } from '../components/real-estate/RealEstateFAQ';
 import { RealEstateContact } from '../components/real-estate/RealEstateContact';
 import { RealEstateFooter } from '../components/real-estate/RealEstateFooter';
+import { RealEstatePreloader } from '../components/real-estate/RealEstatePreloader';
 import { Project } from '../types';
 import { getProjectsFromFirestore } from '../services/firebaseService';
 import { INITIAL_PROJECTS } from '../constants';
@@ -23,9 +24,25 @@ export const RealEstatePage: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>(INITIAL_PROJECTS);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
+  const [fullPageLoading, setFullPageLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    let progressInterval: NodeJS.Timeout;
+    let finishTimeout: NodeJS.Timeout;
+
+    // Start progress simulation
+    setProgress(5);
+    progressInterval = setInterval(() => {
+      setProgress(prev => {
+        if (prev >= 98) return 98;
+        return prev + Math.random() * 15;
+      });
+    }, 300);
+
     const fetchProjects = async () => {
       try {
         const fetchedProjects = await getProjectsFromFirestore(true);
@@ -36,9 +53,22 @@ export const RealEstatePage: React.FC = () => {
         console.error("Failed to fetch projects:", error);
       } finally {
         setLoading(false);
+        // Complete progress and start fade out
+        setProgress(100);
+        finishTimeout = setTimeout(() => {
+          setFullPageLoading(false);
+          // Unmount after transition
+          setTimeout(() => setShowPreloader(false), 1200);
+        }, 600);
       }
     };
+
     fetchProjects();
+
+    return () => {
+      clearInterval(progressInterval);
+      if (finishTimeout) clearTimeout(finishTimeout);
+    };
   }, []);
 
   const realEstateProjects = projects.filter(p => p.isRealEstate === true);
@@ -63,8 +93,15 @@ export const RealEstatePage: React.FC = () => {
       </Helmet>
 
       <GrainOverlay />
+
+      {/* Real Estate Preloader */}
+      {showPreloader && (
+        <div className={`fixed inset-0 z-[100] transition-opacity duration-1000 ease-in-out ${fullPageLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+          <RealEstatePreloader progress={progress} />
+        </div>
+      )}
       
-      <main>
+      <main className={`transition-all duration-1000 delay-300 ${fullPageLoading ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
         <RealEstateHero />
         <RealEstateManifesto />
         <BrandAnalysisSection />
