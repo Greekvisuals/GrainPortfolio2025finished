@@ -49,7 +49,6 @@ export const RealEstateHero: React.FC = () => {
             <GlowingButton 
               onClick={() => window.open('https://www.grainanalysis.com/', '_blank')}
               className="!h-11 md:!h-16 !tracking-[0.2em] md:!tracking-[0.3em] !text-[10px] md:!text-sm"
-            >
               Try Free Analysis
             </GlowingButton>
             <button 
