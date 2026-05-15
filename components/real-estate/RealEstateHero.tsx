@@ -45,10 +45,8 @@ export const RealEstateHero: React.FC = () => {
             We don't just film properties. We craft cinematic legacies that command attention and justify premium valuations in Marbella's most competitive market.
           </p>
 
-          div className="flex flex-row items-center justify-center gap-4 md:gap-10">
-            <GlowingButton 
-              className="!h-11 md:!h-16 !tracking-[0.2em] md:!tracking-[0.3em] !text-[10px] md:!text-sm"
-              onClick={() => window.open('https://www.grainanalysis.com/', '_blank')}
+          <div className="flex flex-row items-center justify-center gap-4 md:gap-10">
+            <GlowingButton className="!h-11 md:!h-16 !tracking-[0.2em] md:!tracking-[0.3em] !text-[10px] md:!text-sm">
               Try Free Analysis
             </GlowingButton>
             <button 
