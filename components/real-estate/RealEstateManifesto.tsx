@@ -15,7 +15,7 @@ export const RealEstateManifesto: React.FC = () => {
           <div className="space-y-3 md:space-y-8">
             <h2 className="text-1,75xl md:text-5xl lg:text-[56px] font-medium tracking-tight text-[#921713] leading-[1.1] md:leading-[1.05] max-w-6xl" style={{ fontFamily: "'Playfair Display', serif" }}>
               Strong visuals aren’t a luxury. <br className="hidden lg:block"/>
-              They’re how serious Real Estate companies compete. We partner with ambitious <span className="italic">Scandinavian Real Estate</span> companies to build a visual identity that builds trust, elevates perception, and positions you as the obvious choice in a saturated market.
+              They’re how serious Real Estate companies compete. We partner with a limited number of ambitious <span className="italic">Scandinavian Real Estate</span> companies to build a visual identity that builds trust, elevates perception, and positions you as the obvious choice in a saturated market.
             </h2>
             
             <p className="text-sm md:text-xl lg:text-[24px] text-[#921713]/80 font-light leading-relaxed max-w-2xl italic">
