@@ -116,7 +116,7 @@ export const RealEstateServices: React.FC = () => {
             number="02"
             title="Property Sale Package"
             description="Bespoke cinematic listing videos designed to present homes with emotional depth, justified premium valuations, and elite first impressions."
-            price="€1500 - €2500"
+            price="€2500 - €3500"
             includes={[
               "High-end property film",
               "Lifestyle shots",
@@ -131,7 +131,7 @@ export const RealEstateServices: React.FC = () => {
             number="03"
             title="Property Rental Package"
             description="Tailored for rental properties, created to increase attention, strengthen presentation, and attract the right audience faster."
-            price="€1000 - €1500"
+            price="€1500 - €2000"
             includes={[
               "High-end property rental film",
               "Experience shots",
