@@ -251,7 +251,7 @@ export const TEAM_MEMBERS = [
     image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Still%202026-04-19%20120121_1.25.7.JPG?alt=media&token=ee3bac8f-df45-4a09-afae-eb5d932e357f"
   },
   {
-    name: "Elise Bjørnøs",
+    name: "Elise Bjørsnøs",
     role: "Creative Producer / Head of Strategy",
     image: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Still%202026-04-19%20163557_2.7.1.jpg?alt=media&token=73614452-7c7b-46bd-bad9-f8849827e898"
   }
