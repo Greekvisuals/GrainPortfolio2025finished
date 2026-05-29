@@ -62,7 +62,6 @@ export const HomePage: React.FC<HomePageProps> = ({ projects, loading, handlePro
       <About />
       <Reviews />
       <Contact />
-      <Philosophy />
       <FAQ 
         items={SEO_FAQS} 
         subtitle="Everything you need to know about our cinematic brand films and video production services worldwide."
