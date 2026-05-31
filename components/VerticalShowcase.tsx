@@ -17,7 +17,7 @@ export const VerticalShowcase: React.FC<VerticalShowcaseProps> = ({ projects, on
     <section className="relative z-40 py-24 bg-[#0a0a0a] px-6 border-b border-white/10">
       <div className="max-w-[1920px] mx-auto">
         <div className="flex items-end justify-between mb-12">
-          <h2 className="text-3xl md:text-5xl font-display font-medium text-white tracking-tight">Featured Projects</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-medium text-white tracking-tight">Vertical Showcase</h2>
           <div className="flex gap-2">
              <button className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors text-white/60">
                 ←
