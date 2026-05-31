@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           </h2>
           <p className="mt-8 text-base md:text-xl text-white/50 max-w-2xl font-light tracking-wide leading-relaxed text-center">
             We help ambitious businesses close the gap between <br className="hidden md:block" />
-            how good they are and how they're perceived.
+            how good they are and how they're perceived with our Film Grade Content System™
           </p>
         </div>
         
