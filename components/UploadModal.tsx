@@ -257,16 +257,22 @@ export const UploadModal: React.FC<UploadModalProps> = ({ isOpen, onClose, onUpl
                 className="w-full bg-white/5 border border-white/10 p-3 text-white focus:outline-none focus:border-white/40 transition-colors mb-4"
               >
                 <option value="">Select Category</option>
-                <option value="Brand Film">Brand Film</option>
-                <option value="Commercial">Commercial</option>
-                <option value="Short Film">Short Film</option>
-                <option value="Music Video">Music Video</option>
-                <option value="UGC">UGC</option>
-                <option value="Showcase">Showcase</option>
-                <option value="Luxury Villa">Luxury Villa</option>
-                <option value="Real Estate">Real Estate</option>
-                <option value="Property Showcase">Property Showcase</option>
-              </select>
+                    <option value="Identity Film">Identity Film</option>
+                    <option value="Brand Film">Brand Film</option>
+                    <option value="Campaign Film">Campaign Film</option>
+                    <option value="Launch Film">Launch Film</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Short Film">Short Film</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Music Video">Music Video</option>
+                    <option value="Fashion Film">Fashion Film</option>
+                    <option value="Editorial / Lookbook">Editorial / Lookbook</option>
+                    <option value="UGC">UGC</option>
+                    <option value="Showcase">Showcase</option>
+                    <option value="Luxury Villa">Luxury Villa</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Property Showcase">Property Showcase</option>
+                  </select>
 
               <label className="flex items-center gap-3 cursor-pointer group">
                 <div 
