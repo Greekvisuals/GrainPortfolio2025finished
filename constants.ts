@@ -258,24 +258,28 @@ export const TEAM_MEMBERS = [
 ];
 
 export const SEO_FAQS = [
-  {
-    question: "What makes your video production in Marbella different from everyone else?",
-    answer: "As a premier video production company in Marbella, we don't just shoot videos; we craft cinematic brand films. Our approach combines high-end cinema cameras, meticulous lighting, and Hollywood-grade color grading to ensure your brand stands out globally. We understand the unique luxury market of Marbella and translate that into visual storytelling."
-  },
-  {
-    question: "Do you only produce brand films in Marbella?",
-    answer: "While our roots and primary studio are based in Marbella, Spain, we produce cinematic brand films worldwide. Our team frequently travels internationally for clients who demand the highest tier of visual storytelling, bringing our signature cinematic aesthetic to global campaigns."
-  },
-  {
-    question: "What is a cinematic brand film?",
-    answer: "A cinematic brand film is a high-end, narrative-driven video that communicates a brand's core values, mission, and identity. Unlike traditional commercials that focus purely on selling a product, a brand film uses documentary-style storytelling, cinema-grade cameras, and emotional pacing to build a deeper connection with the audience. It utilizes the techniques and visual language of feature films to elevate your brand's perception."
-  },
-  {
-    question: "How long does a typical video production project take?",
-    answer: "For a premium brand film in Marbella or internationally, the timeline typically ranges from 2 to 4 weeks. This includes pre-production (concept development, scripting, location scouting), production (filming), and post-production (editing, sound design, color grading). We ensure every frame meets our rigorous cinematic standards."
-  },
-  {
-    question: "Do you handle the entire video production process?",
-    answer: "Yes, we are a full-service video production agency. From the initial creative concept to the final color-graded cinematic brand film, we handle everything. This includes casting, location scouting in Marbella and beyond, directing, filming, and comprehensive post-production."
-  }
+ {
+  question: "What is the Film Grade Content System™?",
+  answer: "A library of versatile visual assets built to work across marketing, sales, social, paid media, and recruiting. Content planned and produced to give your brand more to work with over time.\n\n• Social\n• Paid Media\n• Sales Enablement\n• Recruiting\n• Website"
+},
+{
+  question: "What makes your video production in Marbella different from everyone else?",
+  answer: "We focus on creating content that feels true to the brand, not just making things look cinematic. Our approach combines thoughtful creative direction, strong cinematography, and careful post-production to create work that is both visually considered and useful for the brand."
+},
+{
+  question: "Do you only produce brand films in Marbella?",
+  answer: "No. Grain is based in Marbella, Spain, but we work with brands across Spain and internationally. When a project takes us elsewhere, we bring the same creative approach and production process with us."
+},
+{
+  question: "What is a cinematic brand film?",
+  answer: "A cinematic brand film uses storytelling and film-making techniques to communicate more than just what a brand sells. It can bring together people, places, products, and ideas to show what makes a brand different in a more engaging way.\n\nThe style can range from highly produced to documentary-led, depending on what suits the brand and the story."
+},
+{
+  question: "How long does a typical video production project take?",
+  answer: "It depends on the project. Smaller productions can often be completed within a few days, while larger brand films may take several weeks from planning to final delivery.\n\nBefore we start, we'll provide a clear timeline covering pre-production, filming, and post-production."
+},
+{
+  question: "Do you handle the entire video production process?",
+  answer: "Yes. We can handle the production from concept and planning through to filming, editing, sound design, and colour grading.\n\nDepending on the project, we can also take care of casting, locations, crew, and other production needs."
+}
 ];
