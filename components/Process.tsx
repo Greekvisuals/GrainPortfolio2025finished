@@ -7,7 +7,7 @@ export const Process: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
            <h2 className="text-4xl md:text-6xl font-display uppercase text-white">Our Process</h2>
-           <span className="text-xs text-white/40 uppercase tracking-widest mt-2 block">From Concept to Final Cut</span>
+           <span className="text-xs text-white/40 uppercase tracking-widest mt-2 block">From Concept to Final delivery</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
