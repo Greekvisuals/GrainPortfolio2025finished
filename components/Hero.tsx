@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
             <span className="italic font-medium text-halation">set the standard.</span>
           </h2>
           <p className="mt-8 text-base md:text-xl text-white/50 max-w-2xl font-light tracking-wide leading-relaxed text-center">
-            We build complete content libraries <br className="hidden md:block" />
+            We build complete content libraries, <br className="hidden md:block" />
             designed around what your marketing actually needs.  
           </p>
         </div>
