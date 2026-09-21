@@ -231,7 +231,7 @@ export const PROCESS_STEPS = [
     title: "Post-Production",
     description: "Where the magic solidifies. Editing, color grading, and sound design come together to sculpt the final emotional arc of the film."
    },
-{
+  {
     number: "05",
     title: "Structured Delivery",
     description: "Delivery of a complete, organized library with ready-to-use assets for socials, ads, website, and campaigns - structured in a buttery smooth way to make implementation flawless."
