@@ -10,7 +10,7 @@ export const Process: React.FC = () => {
            <span className="text-xs text-white/40 uppercase tracking-widest mt-2 block">From Concept to Final delivery</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {PROCESS_STEPS.map((step, index) => (
             <div key={index} className="flex flex-col group">
               <span className="text-6xl md:text-8xl font-display text-white/10 group-hover:text-white/20 transition-colors mb-6">
