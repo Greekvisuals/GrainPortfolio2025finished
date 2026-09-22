@@ -6,7 +6,7 @@ export const ClientSlider: React.FC = () => {
     { src: "https://www.bmw.es/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg", alt: "BMW" },
     { src: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/FINAL-LOGO-2_preview_rev_2.png?alt=media&token=dbb42ad5-014a-453e-9c9c-12ae6d9d13c7", alt: "BMW" },    
     { src: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Trailberg%20(1).svg?alt=media&token=81ce0a32-21e0-4b5c-b72a-e662ecb88bb9", alt: "Nintendo" },
-    { src: "https://firebasestorage.googleapis.com/v0/b/redhead-productions.firebasestorage.app/o/c5a4f8e3ff9222bbc4862cbf3e941850.jpg?alt=media&token=8d18f45f-beb6-4724-971f-afb75bca0693" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/redhead-productions.firebasestorage.app/o/pngfind.com-mini-cooper-logo-png-5206934.png?alt=media&token=eb8c2802-1bdd-434d-8042-5b121cd67c02" },
     { src: "https://firebasestorage.googleapis.com/v0/b/redhead-productions.firebasestorage.app/o/2644d8ed-8a7f-4c31-bb10-609a14ca44dc.png?alt=media&token=deba0706-7327-471b-9a22-e0de90fe992f" },
     { src: "https://firebasestorage.googleapis.com/v0/b/grain-studio.firebasestorage.app/o/Artboard%205_High.png?alt=media&token=620c5168-344a-4269-97b1-75059bfd6579", alt: "Prada" },
   ];
