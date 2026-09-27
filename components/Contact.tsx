@@ -163,7 +163,7 @@ export const Contact: React.FC = () => {
                 type="tel" 
                 name="Phone" 
                 id="phone"
-                placeholder="+47 600 000 000"
+                placeholder="+47 600 00 000"
                 className="w-full rounded-full bg-[#bbbbbb]/15 hover:bg-[#bbbbbb]/20 focus:bg-[#bbbbbb]/25 border border-white/10 focus:border-white/40 px-6 py-3.5 text-sm text-white placeholder:text-white/30 focus:outline-none transition-all duration-200"
               />
             </div>
