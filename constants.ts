@@ -200,7 +200,7 @@ export const MOCK_REVIEWS: Review[] = [
 ];
 
 export const SERVICES = [
-  "Film-grade content system",
+  "Film-grade system",
   "Campaign / Launch Films",
   "Athlete Mini Docs",
   "Commercials & Ad Spots",    
