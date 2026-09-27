@@ -264,7 +264,7 @@ export const TEAM_MEMBERS = [
 
 export const SEO_FAQS = [
  {
-  question: "What is the Film Grade Content System™?",
+  question: "What is the Film Grade System™?",
   answer: "A library of versatile visual assets built to work across marketing, sales, social, paid media, and recruiting. Content planned and produced to give your brand more to work with over time.\n\n• Social\n• Paid Media\n• Sales Enablement\n• Recruiting\n• Website"
 },
 {
