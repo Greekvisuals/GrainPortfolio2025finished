@@ -13,7 +13,7 @@ const SERVICES_DATA: ServiceItem[] = [
   {
     number: "01",
     title: "Film Grade System™",
-    description: "A library of versatile visual assets built to work across marketing, sales, social, paid media, and recruiting - designed to compound over time, not collect dust after one campaign.",
+    description: "A library of versatile visual assets built to work across marketing, sales, social and paid media - designed to compound over time, not collect dust after one campaign.",
     tags: ["Website", "Social", "Paid Media", "Sales Enablement"]
   },
   {
