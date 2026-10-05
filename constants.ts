@@ -224,7 +224,7 @@ export const PROCESS_STEPS = [
   {
     number: "03",
     title: "Production",
-    description: "This is where the ideas comes to life. We direct, shoot and capture your story with strong storytelling, intentional cinematography and a visual language that feels expensive and true to your brand."
+    description: "This is where the ideas come to life. We direct, shoot and capture your story with intentional storytelling, cinematography and a visual language that feels expensive and true to your brand."
   },
   {
     number: "04",
