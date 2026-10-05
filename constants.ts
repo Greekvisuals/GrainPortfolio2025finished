@@ -219,7 +219,7 @@ export const PROCESS_STEPS = [
   {
     number: "02",
     title: "Creative & Pre-Production",
-    description: "Meticulous planning. We scout locations, cast talent, and storyboard every frame to ensure the vision is airtight before the camera rolls."
+    description: "Once the direction is clear, we build the production around it. From locations and talent to shot lists, storyboards and logistics, everything is planned before we roll."
   },
   {
     number: "03",
