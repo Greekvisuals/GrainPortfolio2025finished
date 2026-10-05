@@ -229,7 +229,7 @@ export const PROCESS_STEPS = [
   {
     number: "04",
     title: "Post-Production",
-    description: "Where the magic solidifies. Editing, color grading, and sound design come together to sculpt the final emotional arc of the film."
+    description: "Where the magic comes together. Editing shapes the story, sound design builds the atmosphere, and color grading gives the film its final character, all under the same brand universe."
    },
   {
     number: "05",
